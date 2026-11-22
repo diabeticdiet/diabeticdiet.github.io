@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diabetic Diet — Home</title>
+<meta name="description" content="Practical diabetic diet guidance: carb counting, low-GI foods, meal planning, and eating out with diabetes.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<style>
+body{font-family:'Segoe UI',Arial,Helvetica,sans-serif;color:#1e3a4c;background:#ffffff;margin:0;line-height:1.65}
+.layout{display:flex;min-height:100vh}
+aside{width:250px;background:#1d4e79;color:#fff;padding:24px 18px;flex-shrink:0}
+aside a{color:#fff;text-decoration:none}
+.site-title{font-size:22px;margin:0 0 4px}
+.site-title span{color:#bcd9ea}
+.tagline{font-size:13px;color:#bcd9ea;margin:0 0 24px}
+aside nav a{display:block;padding:9px 10px;border-radius:6px;font-size:15px;margin:2px 0}
+aside nav a:hover{background:#2a6394}
+aside nav a.section{margin-top:16px;font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#9cc3dd}
+aside nav a.section:hover{background:none}
+main{flex:1;max-width:760px;padding:28px 32px 60px}
+h1{font-size:28px;color:#1d4e79}
+h2{font-size:21px;color:#1d4e79;margin-top:34px}
+h3{font-size:17px;color:#1d4e79}
+a{color:#1d6fa8}
+.hero-img{width:100%;height:auto;border-radius:10px;margin:8px 0 4px}
+.notice{background:#eaf3fa;border:1px solid #bcd9ea;border-left:4px solid #1d6fa8;border-radius:6px;padding:12px 14px;font-size:14px}
+.tool{background:#f2f7fb;border:1px solid #d5e5f0;border-radius:10px;padding:20px;margin:22px 0}
+.tool h3{margin-top:0}
+label{display:block;font-size:13px;font-weight:bold;margin:10px 0 4px}
+input,select{width:100%;max-width:360px;padding:9px;border:1px solid #b0c9dc;border-radius:6px;font-size:15px;box-sizing:border-box}
+button{background:#1d6fa8;color:#fff;border:none;padding:10px 18px;border-radius:6px;font-size:15px;cursor:pointer;margin-top:12px}
+button:hover{background:#155a89}
+.result{margin-top:12px;background:#fff;border-left:4px solid #1d6fa8;padding:10px 12px;font-size:14px;border-radius:0 6px 6px 0}
+.article-item{display:flex;gap:16px;border-bottom:1px solid #e2ecf2;padding:16px 0}
+.article-item img{width:150px;height:100px;object-fit:cover;border-radius:8px;flex-shrink:0}
+.article-item h3{margin:0 0 4px}
+.article-item h3 a{text-decoration:none}
+.article-item p{margin:0;font-size:14px;color:#4a6a80}
+footer{color:#7a93a6;font-size:13px;padding:24px 0;border-top:1px solid #e2ecf2;margin-top:40px}
+footer a{color:#7a93a6}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid #d5e5f0;padding:8px;text-align:left}
+th{background:#eaf3fa}
+@media(max-width:760px){.layout{flex-direction:column}aside{width:auto;padding:16px}main{padding:20px 16px 48px}.article-item img{width:110px;height:76px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+<p class="site-title"><a href="index.html">Diabetic <span>Diet</span></a></p>
+<p class="tagline">Calm, practical guidance for everyday eating with diabetes</p>
+<nav>
+<a href="index.html">Home</a>
+<a href="guides/diabetic-diet-basics.html">Diet Basics</a>
+<a href="guides/low-gi-foods.html">Low-GI Foods</a>
+<a href="guides/carb-counting.html">Carb Counting</a>
+<a href="guides/diabetic-breakfast-ideas.html">Breakfast Ideas</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy</a>
+<a href="disclaimer.html">Disclaimer</a>
+</nav>
+</aside>
+<main><h1>Eating well with diabetes</h1><p>Calm, practical guidance on carbs, glycemic index, meals, and eating out — written for everyday life, not for textbooks.</p>
+
+<p class="notice"><strong>Important:</strong> This site is educational only and is not medical advice. The tools below give general information. Always consult your doctor or diabetes care team before changing your diet, medication, or monitoring routine.</p>
+<h2>Tools</h2>
+
+<div class="tool"><h3>1. Carb Counter</h3>
+<p>Pick a food and the number of servings to see the total carbohydrate grams. Values are typical averages for the serving shown and can vary by brand and preparation.</p>
+<label for="cc-food">Food (carbs per serving)</label>
+<select id="cc-food">
+<option value="15">White bread, 1 slice — 15 g</option>
+<option value="15">Wholemeal bread, 1 slice — 15 g</option>
+<option value="30">Cooked white rice, 2/3 cup (100 g) — 30 g</option>
+<option value="27">Cooked brown rice, 2/3 cup (100 g) — 27 g</option>
+<option value="30">Cooked pasta, 2/3 cup (100 g) — 30 g</option>
+<option value="15">Apple, 1 medium — 15 g</option>
+<option value="27">Banana, 1 medium — 27 g</option>
+<option value="12">Milk, 1 cup (240 ml) — 12 g</option>
+<option value="6">Greek yoghurt, plain, 3/4 cup — 6 g</option>
+<option value="15">Rolled oats, dry, 1/4 cup (40 g) — 15 g</option>
+<option value="20">Potato, boiled, 1 medium — 20 g</option>
+<option value="15">Sweetcorn, 1/2 cup — 15 g</option>
+<option value="15">Orange, 1 medium — 15 g</option>
+<option value="9">Carrots, cooked, 1/2 cup — 9 g</option>
+<option value="0">Chicken breast, 100 g — 0 g</option>
+<option value="1">Eggs, 1 large — 1 g</option>
+</select>
+<label for="cc-serv">Servings</label><input id="cc-serv" type="number" min="0.5" step="0.5" value="1">
+<button onclick="carbCount()">Count carbs</button>
+<p id="cc-out" class="result">Total carbs will appear here.</p></div>
+
+<div class="tool"><h3>2. Glycemic Index Guide</h3>
+<p>Search a food to see its approximate glycemic index (GI). Low is under 55, medium is 56 to 69, and high is 70 or above. GI values vary with variety, ripeness, and cooking.</p>
+<label for="gi-q">Search a food</label><input id="gi-q" type="text" placeholder="e.g. oats, rice, bread" oninput="giSearch()">
+<ul id="gi-list">
+<li data-gi="55">Rolled oats — GI 55 (low)</li>
+<li data-gi="73">White bread — GI 73 (high)</li>
+<li data-gi="68">Brown rice — GI 68 (medium)</li>
+<li data-gi="73">White rice, jasmine — GI 73 (high)</li>
+<li data-gi="50">Wholemeal bread — GI 50 (low)</li>
+<li data-gi="39">Apple — GI 39 (low)</li>
+<li data-gi="51">Banana — GI 51 (low)</li>
+<li data-gi="15">Milk, whole — GI 15 (low)</li>
+<li data-gi="52">Sweet potato — GI 52 (low)</li>
+<li data-gi="78">Baked potato — GI 78 (high)</li>
+<li data-gi="44">Pasta, spaghetti — GI 44 (low)</li>
+<li data-gi="25">Lentils — GI 25 (low)</li>
+<li data-gi="31">Chickpeas — GI 31 (low)</li>
+<li data-gi="70">Cornflakes — GI 70 (high)</li>
+</ul>
+<p id="gi-none" class="result" style="display:none">No match found. Try another food, such as oats or rice.</p></div>
+
+<div class="tool"><h3>3. Blood Sugar Log</h3>
+<p>Record your readings on this page. The table is for your own notes only — entries are not saved anywhere and disappear when you leave or refresh the page.</p>
+<label for="bs-date">Date and time</label><input id="bs-date" type="text" placeholder="e.g. 22 Nov, 8:00 am" style="max-width:360px">
+<label for="bs-val">Reading (mmol/L)</label><input id="bs-val" type="number" step="0.1" min="1" placeholder="e.g. 6.2">
+<label for="bs-note">Note (optional)</label><input id="bs-note" type="text" placeholder="e.g. before breakfast">
+<button onclick="addReading()">Add reading</button>
+<table id="bs-table" style="margin-top:14px"><thead><tr><th>Date / time</th><th>Reading (mmol/L)</th><th>Note</th></tr></thead><tbody><tr><td colspan="3">No readings yet.</td></tr></tbody></table>
+<p class="notice" style="margin-top:12px">This log is not medical advice. If a reading is very high or very low, or you feel unwell, follow your care team's guidance and seek medical help promptly.</p></div>
+
+<div class="tool"><h3>4. Meal Planner</h3>
+<p>Build one day of meals from the options below. Carb counts are typical values for the serving shown.</p>
+<label for="mp-b">Breakfast</label><select id="mp-b"><option value="30">Porridge with berries — 30 g</option><option value="20">Eggs with wholemeal toast — 20 g</option><option value="45">Toast with beans — 45 g</option><option value="6">Greek yoghurt with nuts — 6 g</option></select>
+<label for="mp-l">Lunch</label><select id="mp-l"><option value="35">Chicken salad sandwich — 35 g</option><option value="30">Lentil soup with bread — 30 g</option><option value="25">Tuna salad, no bread — 25 g</option><option value="40">Brown rice and vegetable bowl — 40 g</option></select>
+<label for="mp-d">Dinner</label><select id="mp-d"><option value="35">Grilled salmon, vegetables, small potato — 35 g</option><option value="30">Chicken stir-fry with noodles — 30 g</option><option value="45">Spaghetti with tomato sauce — 45 g</option><option value="20">Bean chilli with salad — 20 g</option></select>
+<label for="mp-s">Snack</label><select id="mp-s"><option value="15">Apple with peanut butter — 15 g</option><option value="10">Handful of nuts — 10 g</option><option value="6">Yoghurt — 6 g</option><option value="0">No snack — 0 g</option></select>
+<button onclick="mealPlan()">Show day total</button>
+<p id="mp-out" class="result">Your day plan will appear here.</p></div>
+
+<div class="tool"><h3>5. BMI Calculator</h3>
+<p>Body mass index is weight in kilograms divided by height in metres squared.</p>
+<label for="bmi3-w">Weight (kg)</label><input id="bmi3-w" type="number" min="20" value="80">
+<label for="bmi3-h">Height (cm)</label><input id="bmi3-h" type="number" min="100" value="175">
+<button onclick="calcBMI3()">Calculate BMI</button>
+<p id="bmi3-out" class="result">Your BMI will appear here.</p></div>
+
+<script>
+function carbCount(){
+  var c=parseFloat(document.getElementById('cc-food').value), s=parseFloat(document.getElementById('cc-serv').value);
+  var out=document.getElementById('cc-out');
+  if(isNaN(c)||!(s>0)){out.textContent='Please choose a food and enter servings greater than zero.';return;}
+  out.textContent='Total carbohydrate: '+(c*s).toFixed(1)+' g for '+s+' serving(s). Values are typical averages; check your product label for exact figures.';
+}
+function giSearch(){
+  var q=document.getElementById('gi-q').value.toLowerCase();
+  var items=document.querySelectorAll('#gi-list li'); var shown=0;
+  items.forEach(function(li){var ok=!q||li.textContent.toLowerCase().indexOf(q)>-1; li.style.display=ok?'':'none'; if(ok)shown++;});
+  document.getElementById('gi-none').style.display=shown?'none':'block';
+}
+function addReading(){
+  var d=document.getElementById('bs-date').value.trim(), v=parseFloat(document.getElementById('bs-val').value), n=document.getElementById('bs-note').value.trim();
+  if(!d||isNaN(v)){alert('Please enter a date/time and a reading.');return;}
+  var tb=document.querySelector('#bs-table tbody');
+  if(tb.rows.length===1&&tb.rows[0].cells.length===1){tb.deleteRow(0);}
+  var row=tb.insertRow(); row.insertCell(0).textContent=d; row.insertCell(1).textContent=v.toFixed(1); row.insertCell(2).textContent=n||'—';
+  document.getElementById('bs-date').value=''; document.getElementById('bs-val').value=''; document.getElementById('bs-note').value='';
+}
+function mealPlan(){
+  var b=parseFloat(document.getElementById('mp-b').value), l=parseFloat(document.getElementById('mp-l').value), d=parseFloat(document.getElementById('mp-d').value), s=parseFloat(document.getElementById('mp-s').value);
+  var total=b+l+d+s;
+  document.getElementById('mp-out').textContent='Day total: '+total+' g carbohydrate (breakfast '+b+' g, lunch '+l+' g, dinner '+d+' g, snack '+s+' g). This is a general planning example, not a personal prescription — your own targets should come from your doctor or dietitian.';
+}
+function calcBMI3(){
+  var w=parseFloat(document.getElementById('bmi3-w').value), h=parseFloat(document.getElementById('bmi3-h').value)/100;
+  var out=document.getElementById('bmi3-out');
+  if(!(w>0)||!(h>0)){out.textContent='Please enter a valid weight and height.';return;}
+  var bmi=w/(h*h), cat=bmi<18.5?'Underweight':bmi<25?'Healthy weight':bmi<30?'Overweight':'Obese';
+  out.textContent='Your BMI is '+bmi.toFixed(1)+' — '+cat+'. (Under 18.5 underweight, 18.5–24.9 healthy, 25–29.9 overweight, 30+ obese.)';
+}
+</script>
+
+<h2>Guides</h2><div class="article-item"><a href="guides/diabetic-diet-basics.html"><img src="images/diabetic-diet-basics.jpg" alt="Diabetic Diet Basics — Eating Well with Diabetes"></a><div><h3><a href="guides/diabetic-diet-basics.html">Diabetic Diet Basics — Eating Well with Diabetes</a></h3><p>The foundations of eating with diabetes: balanced plates, steady carbs, and habits that help keep blood sugar stable.</p></div></div>
+<div class="article-item"><a href="guides/low-gi-foods.html"><img src="images/low-gi-foods.jpg" alt="Low-GI Foods — A Practical Guide to the Glycemic Index"></a><div><h3><a href="guides/low-gi-foods.html">Low-GI Foods — A Practical Guide to the Glycemic Index</a></h3><p>What glycemic index means, which foods are low GI, and how to use GI without overcomplicating your meals.</p></div></div>
+<div class="article-item"><a href="guides/carb-counting.html"><img src="images/carb-counting.jpg" alt="Carb Counting — A Step-by-Step Guide for Diabetes"></a><div><h3><a href="guides/carb-counting.html">Carb Counting — A Step-by-Step Guide for Diabetes</a></h3><p>How to count carbohydrates accurately: labels, portions, common foods, and the mistakes that cause most errors.</p></div></div>
+<div class="article-item"><a href="guides/diabetic-breakfast-ideas.html"><img src="images/diabetic-breakfast-ideas.jpg" alt="Diabetic Breakfast Ideas — Steady Starts to the Day"></a><div><h3><a href="guides/diabetic-breakfast-ideas.html">Diabetic Breakfast Ideas — Steady Starts to the Day</a></h3><p>Breakfasts that keep blood sugar steadier: high-fibre, protein-rich options and the ones to watch.</p></div></div>
+<div class="article-item"><a href="guides/eating-out-with-diabetes.html"><img src="images/eating-out-with-diabetes.jpg" alt="Eating Out with Diabetes — Enjoying Restaurants Without the Spike"></a><div><h3><a href="guides/eating-out-with-diabetes.html">Eating Out with Diabetes — Enjoying Restaurants Without the Spike</a></h3><p>How to choose restaurants, read menus, manage portions, and enjoy eating out with diabetes.</p></div></div>
+<div class="article-item"><a href="guides/sugar-substitutes.html"><img src="images/sugar-substitutes.jpg" alt="Sugar Substitutes — Sweeteners and Diabetes"></a><div><h3><a href="guides/sugar-substitutes.html">Sugar Substitutes — Sweeteners and Diabetes</a></h3><p>A clear look at sugar substitutes for diabetes: which sweeteners are safe, how they affect blood sugar, and how to use them.</p></div></div>
+<div class="article-item"><a href="guides/diabetic-lunch-ideas.html"><img src="images/diabetic-lunch-ideas.jpg" alt="Diabetic Lunch Ideas — Midday Meals That Keep Blood Sugar Steady"></a><div><h3><a href="guides/diabetic-lunch-ideas.html">Diabetic Lunch Ideas — Midday Meals That Keep Blood Sugar Steady</a></h3><p>Practical diabetic lunch ideas for home, work, and school: balanced plates, easy prep, and portions that work.</p></div></div>
+<div class="article-item"><a href="guides/diabetic-dinner-recipes.html"><img src="images/diabetic-dinner-recipes.jpg" alt="Diabetic Dinner Recipes — Evening Meals for Steady Blood Sugar"></a><div><h3><a href="guides/diabetic-dinner-recipes.html">Diabetic Dinner Recipes — Evening Meals for Steady Blood Sugar</a></h3><p>Diabetic-friendly dinner ideas: balanced plates, simple cooking methods, and recipes the whole family can enjoy.</p></div></div>
+<div class="article-item"><a href="guides/diabetic-snacks.html"><img src="images/diabetic-snacks.jpg" alt="Diabetic Snacks — Smart Snacking Between Meals"></a><div><h3><a href="guides/diabetic-snacks.html">Diabetic Snacks — Smart Snacking Between Meals</a></h3><p>Snacks that help blood sugar stay steady: protein and fibre choices, portions, and what to avoid.</p></div></div>
+<div class="article-item"><a href="guides/type-2-diabetes-diet.html"><img src="images/type-2-diabetes-diet.jpg" alt="Type 2 Diabetes Diet — A Complete Guide"></a><div><h3><a href="guides/type-2-diabetes-diet.html">Type 2 Diabetes Diet — A Complete Guide</a></h3><p>How eating changes with type 2 diabetes: weight, blood sugar, heart health, and a practical eating pattern.</p></div></div>
+<div class="article-item"><a href="guides/gestational-diabetes-diet.html"><img src="images/gestational-diabetes-diet.jpg" alt="Gestational Diabetes Diet — Eating Well in Pregnancy"></a><div><h3><a href="guides/gestational-diabetes-diet.html">Gestational Diabetes Diet — Eating Well in Pregnancy</a></h3><p>How to eat with gestational diabetes: balanced meals, blood sugar targets, and keeping you and your baby healthy.</p></div></div>
+<div class="article-item"><a href="guides/diabetic-meal-planning.html"><img src="images/diabetic-meal-planning.jpg" alt="Diabetic Meal Planning — Plan a Week of Balanced Meals"></a><div><h3><a href="guides/diabetic-meal-planning.html">Diabetic Meal Planning — Plan a Week of Balanced Meals</a></h3><p>How to plan a week of diabetic-friendly meals: a simple method, a sample week, and shopping tips.</p></div></div>
+<div class="article-item"><a href="guides/fiber-and-blood-sugar.html"><img src="images/fiber-and-blood-sugar.jpg" alt="Fiber and Blood Sugar — Why Fibre Is Your Friend"></a><div><h3><a href="guides/fiber-and-blood-sugar.html">Fiber and Blood Sugar — Why Fibre Is Your Friend</a></h3><p>How fibre slows blood sugar rises, which foods are rich in fibre, and how to add more without discomfort.</p></div></div>
+<div class="article-item"><a href="guides/exercise-and-blood-sugar.html"><img src="images/exercise-and-blood-sugar.jpg" alt="Exercise and Blood Sugar — Moving Safely with Diabetes"></a><div><h3><a href="guides/exercise-and-blood-sugar.html">Exercise and Blood Sugar — Moving Safely with Diabetes</a></h3><p>How exercise affects blood sugar, the best activities, and how to exercise safely with diabetes.</p></div></div>
+<div class="article-item"><a href="guides/diabetic-desserts.html"><img src="images/diabetic-desserts.jpg" alt="Diabetic Desserts — Sweet Treats That Work with Diabetes"></a><div><h3><a href="guides/diabetic-desserts.html">Diabetic Desserts — Sweet Treats That Work with Diabetes</a></h3><p>Desserts for diabetes: fruit-based puddings, sugar-free options, baking swaps, and portion control.</p></div></div>
+<div class="article-item"><a href="guides/reading-food-labels.html"><img src="images/reading-food-labels.jpg" alt="Reading Food Labels — A Guide for Diabetes"></a><div><h3><a href="guides/reading-food-labels.html">Reading Food Labels — A Guide for Diabetes</a></h3><p>How to read nutrition labels for diabetes: carbohydrate, sugars, fibre, fat, salt, and the claims that mislead.</p></div></div>
+<div class="article-item"><a href="guides/diabetes-and-heart-health.html"><img src="images/diabetes-and-heart-health.jpg" alt="Diabetes and Heart Health — Protecting Your Heart"></a><div><h3><a href="guides/diabetes-and-heart-health.html">Diabetes and Heart Health — Protecting Your Heart</a></h3><p>Why diabetes raises heart risk, and how food, activity, and habits protect your heart.</p></div></div>
+<div class="article-item"><a href="guides/diabetic-diet-myths.html"><img src="images/diabetic-diet-myths.jpg" alt="Diabetic Diet Myths — What Is True and What Is Not"></a><div><h3><a href="guides/diabetic-diet-myths.html">Diabetic Diet Myths — What Is True and What Is Not</a></h3><p>Common myths about eating with diabetes debunked: sugar, fruit, carbs, and special diabetic foods.</p></div></div>
+<div class="article-item"><a href="guides/low-carb-for-diabetes.html"><img src="images/low-carb-for-diabetes.jpg" alt="Low-Carb for Diabetes — A Balanced Look"></a><div><h3><a href="guides/low-carb-for-diabetes.html">Low-Carb for Diabetes — A Balanced Look</a></h3><p>What low-carb eating means for diabetes, who it helps, the risks, and how to do it safely.</p></div></div>
+<div class="article-item"><a href="guides/diabetes-and-alcohol.html"><img src="images/diabetes-and-alcohol.jpg" alt="Diabetes and Alcohol — What You Need to Know"></a><div><h3><a href="guides/diabetes-and-alcohol.html">Diabetes and Alcohol — What You Need to Know</a></h3><p>How alcohol affects blood sugar, the risks for people with diabetes, and how to drink more safely if you choose to.</p></div></div>
+<footer><p>Diabetic Diet — educational information only, not medical advice. Always consult your doctor or diabetes care team about your personal diet.</p></footer>
+</main>
+</div>
+</body>
+</html>
